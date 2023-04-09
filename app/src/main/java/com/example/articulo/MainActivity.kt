@@ -31,7 +31,12 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    //Greeting("Android")
+                    ArticuloCompleto(
+                        imaxe = painterResource(R.drawable.bg_compose_background),
+                        titulo = stringResource(R.string.Titulo),
+                        preambulo = stringResource(R.string.Preambulo),
+                        texto = stringResource(R.string.Texto)
+                    )
                 }
             }
         }
